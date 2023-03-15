@@ -1,4 +1,4 @@
-# sleepmask_ekko_cfg
+# sleepmask_PatchlessHook
 Code snippets to add on top of cobalt strike sleepmask kit so that patchless hook on AMSI and ETW can be achieved.
 
 _Only for experimental purpose._
@@ -23,7 +23,8 @@ From my peronsal view, suggest not to use it in existing process (i.e. inject), 
 
 ## Caveat
 1. It cannot cater if your action will create new thread during the execution period of time, which means newly spawned threads at that specific period will not have patchless hook. Theoretically, the newly spawned thread(s) will have patchless hook after one sleep cycle.
-2. If you want to address above caveat, you 
+2. If you want to address above caveat, you may hook NtCreateThreadEx to do so.
+3. At the moment, it only caters x64.
 
 ## Credits
 All credits to [@rad9800](https://github.com/rad9800)
