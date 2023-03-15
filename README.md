@@ -22,7 +22,7 @@ From my peronsal view, suggest not to use it in existing process (i.e. inject), 
 4. Compile
 
 ## Caveat
-1. It cannot cater if your action will create new thread during the execution period of time, which means newly spawned threads at that specific period will not have patchless hook. Theoretically, the newly spawned thread(s) will have patchless hook after one sleep cycle.
+1. It cannot cater if your action will create new thread during the execution period of time, which means newly spawned threads at that specific period will not have patchless hook. Theoretically, the newly spawned thread(s) will have patchless hook after one sleep cycle given that they still exist after entering sleep.
 2. If you want to address above caveat, you may hook NtCreateThreadEx to do so.
 3. At the moment, it only caters x64.
 
