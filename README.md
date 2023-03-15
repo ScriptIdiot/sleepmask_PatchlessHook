@@ -8,7 +8,7 @@ From my peronsal view, suggest not to use it in existing process (i.e. inject), 
 
 ## Feature
 1. Breakpoint will be removed during sleep to avoid scanner (I hope lol)
-2. Avoid scanner like moneta that will detect DLL has been modified.
+2. Avoid scanner like moneta that will detect if DLL is modified.
 
 ## Screenshots
 ![image](https://user-images.githubusercontent.com/21979646/225378093-d6de7925-ee56-4bc5-b17d-40836767bafd.png)
