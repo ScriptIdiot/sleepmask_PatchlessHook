@@ -19,7 +19,7 @@ BOOL init = FALSE;
    {
 	   set_hardware_breakpoints(etwPatchAddr, 0, FALSE, 0);
 	   set_hardware_breakpoints(amsiPatchAddr, 1, FALSE, 0);
-	   RemoveVectoredExceptionHandler(exception_handler);
+	   //RemoveVectoredExceptionHandler(exception_handler);
    }
 #endif
 
